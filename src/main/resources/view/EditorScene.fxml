@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane onDragDropped="#rootOnDragDrop" onDragOver="#rootOnDragOver" prefHeight="561.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.editor.controller.EditorSceneController">
+   <children>
+      <MenuBar layoutX="7.0" layoutY="8.0" prefHeight="27.0" prefWidth="271.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mnNewOnAction" text="new">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#mnOpenOnAction" text="open">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#mnSaveOnAction" text="save">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#mnSaveAsOnAction" text="save as">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnCloseOnAction" text="close">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mnAboutOnAction" text="About">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="txtEditor" layoutX="14.0" layoutY="102.0" onKeyPressed="#closeOnKeyRelease" prefHeight="460.0" prefWidth="600.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <VBox layoutX="46.0" layoutY="39.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtFind" promptText="FIND" />
+                  <Button fx:id="btnDown" mnemonicParsing="false" onAction="#btnDownOnAction" prefWidth="100.0" text="DOWN" />
+                  <Button fx:id="btnUp" mnemonicParsing="false" onAction="#btnUpOnAction" prefWidth="100.0" text="UP" />
+                  <CheckBox fx:id="shkMatchCase" mnemonicParsing="false" onAction="#shkMatchCaseOnAction" selected="true" text="Match Case" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <TextField fx:id="txtReplace" promptText="REPLACE" />
+                  <Button fx:id="btnReplace" mnemonicParsing="false" onAction="#btnReplaceOnAction" prefWidth="100.0" text="REPLACE" />
+                  <Button fx:id="btnReplaceAll" mnemonicParsing="false" onAction="#btnReplaceAllOnAction" prefWidth="100.0" text="REPLACEALL" />
+                  <Label fx:id="lblResults" text="0 Results" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

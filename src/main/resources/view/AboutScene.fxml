@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.editor.controller.AboutSceneController">
+   <children>
+      <ImageView fx:id="imgIcon" fitHeight="150.0" fitWidth="200.0" layoutX="211.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/about.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="186.0" prefHeight="90.0" prefWidth="532.0" text="Discover the ultimate Text Editor App – your essential tool for seamless writing. Simple Text Editor app to open, edit, delete, rename, filter &amp; replace words and save text files.  " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="358.0" text="Copyright © 2023. All rights reserved." />
+      <Label layoutX="185.0" layoutY="298.0" prefHeight="51.0" prefWidth="262.0" text="Developed by : Bharatha Jayarathna" wrapText="true" />
+      <Label layoutX="221.0" layoutY="273.0" prefHeight="51.0" prefWidth="116.0" text="Version  : 1.0.0" wrapText="true" />
+   </children>
+</AnchorPane>
