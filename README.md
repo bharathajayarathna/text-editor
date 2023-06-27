@@ -42,7 +42,22 @@ Once you have the Simple Text Editor application running, you can perform the fo
 
 Contributions to the Simple Text Editor application are always welcome. If you encounter any bugs or have suggestions for improvements, please submit an issue or a pull request.
 
+## Acknowledgments
+
+We would like to acknowledge the following resources and projects that have been instrumental in the development of this application:
+
+- [JavaFX](https://openjfx.io/) - The official website for JavaFX, providing documentation and examples.
+- [Scene Builder](https://gluonhq.com/products/scene-builder/) - A visual layout tool for designing JavaFX applications.
+
+## Contact
+
+If you have any questions, suggestions, or feedback, please feel free to reach out:
+
+- Email: [bharathajayarathna97@gmail.com]()
+- GitHub: https://github.com/bharathajayarathna
+
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+You are free to use, modify, and distribute this software for any purpose, including commercial applications. However, please attribute the original work to the authors and include a copy of the license in your project.
+
 
